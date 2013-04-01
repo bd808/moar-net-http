@@ -1,1 +1,11 @@
+.ant-targets-build.xml
+build/api
+build/code-browser
+build/coverage
+build/logs
+build/pdepend
+composer.lock
 composer.phar
+data
+phpunit.xml
+vendor
