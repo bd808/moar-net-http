@@ -1,4 +1,5 @@
 .ant-targets-build.xml
+.php-version
 build/api
 build/code-browser
 build/coverage
