@@ -1,4 +1,7 @@
 <?php
+/**
+ * @package Moar\Net\Http
+ */
 
 namespace Moar\Net\Http;
 
@@ -7,8 +10,7 @@ Util::ensureCurlErrorConstants();
 
 
 /**
- * HTTP request handler that attempts to make performing HTTP requests via
- * cURL easy for the developer.
+ * HTTP request handler that attempts to make using cURL easy.
  *
  * Static convenience methods are provided to performing typical requests such
  * as GET and POST. Several variations of POST are available for
@@ -24,6 +26,8 @@ Util::ensureCurlErrorConstants();
  * Either method of executing a request will result in the provided
  * Request being updated to contain response codes, headers and body data
  * returned by the server processing the URL.
+ *
+ * @package Moar\Net\Http
  */
 class Request {
 

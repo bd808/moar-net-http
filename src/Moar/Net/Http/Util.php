@@ -1,9 +1,14 @@
 <?php
+/**
+ * @package Moar\Net\Http
+ */
 
 namespace Moar\Net\Http;
 
 /**
  * HTTP utilities.
+ *
+ * @package Moar\Net\Http
  */
 class Util {
 
@@ -122,7 +127,6 @@ class Util {
     }
   } //end ensureCurlConstants
 
-
   /**
    * Append a query string to the given URL.
    *
@@ -139,14 +143,51 @@ class Util {
       $payload = (string) $parms;
     }
     if (!empty($payload)) {
-      if (false !== mb_strpos($url, '?')) {
-        $url = "{$url}&{$payload}";
+      $parts = parse_url($url);
+      if (isset($parts['query'])) {
+        $parts['query'] .= "&{$payload}";
       } else {
-        $url = "{$url}?{$payload}";
+        $parts['query'] = $payload;
       }
+      $url = self::assembleUrl($parts);
     }
     return $url;
   } //end addQueryData
+
+  /**
+   * Assemble a URL from a array of components as would be returned by
+   * parse_url().
+   *
+   * @param array $parts URL parts
+   * @return string URL
+   */
+  protected static function assembleUrl ($parts) {
+    $url = '';
+    if (isset($parts['scheme'])) {
+      $url .= "{$parts['scheme']}:";
+    }
+    $url .= '//';
+    if (isset($parts['user'])) {
+      $url .= $parts['user'];
+      if (isset($parts['password'])) {
+        $url .= ":{$parts['password']}";
+      }
+      $url .= '@';
+    }
+    if (isset($parts['host'])) {
+      $url .= $parts['host'];
+    }
+    if (isset($parts['path'])) {
+      $url .= $parts['path'];
+    }
+    if (isset($parts['query'])) {
+      $url .= "?{$parts['query']}";
+    }
+    if (isset($parts['fragment'])) {
+      $url .= "#{$parts['fragment']}";
+    }
+    return $url;
+  } //end assembleUrl
 
   const COOKIE_NAME = 'cookie-name';
   const COOKIE_VALUE = 'cookie-value';

@@ -1,9 +1,14 @@
 <?php
+/**
+ * @package Moar\Net\Http
+ */
 
 namespace Moar\Net\Http;
 
 /**
  * Base exception for HTTP request errors.
+ *
+ * @package Moar\Net\Http
  */
 class Exception extends \RuntimeException {
 

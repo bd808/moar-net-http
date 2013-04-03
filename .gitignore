@@ -1,12 +1,6 @@
-.ant-targets-build.xml
 .php-version
-build/api
-build/code-browser
-build/coverage
-build/logs
-build/pdepend
+build
 composer.lock
 composer.phar
-data
 phpunit.xml
 vendor
