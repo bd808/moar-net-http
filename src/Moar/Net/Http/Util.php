@@ -12,6 +12,9 @@ namespace Moar\Net\Http;
  */
 class Util {
 
+  const COOKIE_NAME = 'cookie-name';
+  const COOKIE_VALUE = 'cookie-value';
+
   /**
    * Make a URL-encoded string from a key=>value array
    * @param array $parms Parameter array
@@ -161,7 +164,7 @@ class Util {
    * @param array $parts URL parts
    * @return string URL
    */
-  protected static function assembleUrl ($parts) {
+  public static function assembleUrl ($parts) {
     $url = '';
     if (isset($parts['scheme'])) {
       $url .= "{$parts['scheme']}:";
@@ -177,6 +180,9 @@ class Util {
     if (isset($parts['host'])) {
       $url .= $parts['host'];
     }
+    if (isset($parts['port'])) {
+      $url .= ":{$parts['port']}";
+    }
     if (isset($parts['path'])) {
       $url .= $parts['path'];
     }
@@ -188,9 +194,6 @@ class Util {
     }
     return $url;
   } //end assembleUrl
-
-  const COOKIE_NAME = 'cookie-name';
-  const COOKIE_VALUE = 'cookie-value';
 
   /**
    * Parse a "Set-Cookie" header to get the component cookie data.
