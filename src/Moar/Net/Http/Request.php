@@ -731,28 +731,28 @@ class Request {
     }
 
     if (CURLE_OK != $this->responseCurlErr) {
-      $exClazz = 'Exception';
+      $exClazz = 'Moar\Net\Http\Exception';
 
       switch ($this->responseCurlErr) {
         case CURLE_UNSUPPORTED_PROTOCOL:
         case CURLE_URL_MALFORMAT:
-          $exClazz = 'BadUrlException';
+          $exClazz = 'Moar\Net\Http\BadUrlException';
           break;
 
         case CURLE_COULDNT_RESOLVE_HOST:
-          $exClazz = 'DnsFailureException';
+          $exClazz = 'Moar\Net\Http\DnsFailureException';
           break;
 
         case CURLE_COULDNT_CONNECT:
-          $exClazz = 'ConnectFailedException';
+          $exClazz = 'Moar\Net\Http\ConnectFailedException';
           break;
 
         case CURLE_HTTP_RETURNED_ERROR:
-          $exClazz = 'StatusCodeException';
+          $exClazz = 'Moar\Net\Http\StatusCodeException';
           break;
 
         case CURLE_OPERATION_TIMEDOUT:
-          $exClazz = 'TimeoutException';
+          $exClazz = 'Moar\Net\Http\TimeoutException';
           break;
 
         case CURLE_PEER_FAILED_VERIFICATION:
@@ -769,7 +769,7 @@ class Request {
         case CURLE_SSL_ISSUER_ERROR:
         case CURLE_SSL_SHUTDOWN_FAILED:
         case CURLE_USE_SSL_FAILED:
-          $exClazz = 'SslException';
+          $exClazz = 'Moar\Net\Http\SslException';
           break;
 
       } //end switch
