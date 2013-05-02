@@ -20,6 +20,9 @@
     ,"ext-curl": "*"
     ,"lib-curl": "*"
   }
+  ,"require-dev": {
+    "icecave/archer": "~0.3"
+  }
   ,"autoload": {
     "psr-0": {"Moar\\Net\\Http": "src/"}
   }
