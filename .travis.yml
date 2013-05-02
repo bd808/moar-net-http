@@ -1,10 +1,20 @@
 language: php
+
 php:
   - 5.3
   - 5.4
   - 5.5
-before_script:
-  - composer install --dev
+
+env:
+  global:
+    - ARCHER_PUBLISH_VERSION=5.4
+    - secure: "bVBEzHvSRWDfZZ2T8VotASMkdda+OE7DGr5F6G65VUzI3tSBlx425Qov3+U4e7FVnRUyZubKYUCATgItZ18urTllRLI4lWhg7Q9yWoZVtYdGlqh1IjP7tfZ7pj8M5I0bwlBCE3PBH6xdl3OUbyUfeNR3mZYTlnLTyqErsn+TonU="
+
+install:
+  - ./.travis.install
+script:
+  - ./vendor/bin/archer travis:build
+
 notifications:
   email:
-    -travis-ci+moar-net-http@bd808.com
+    - travis-ci+moar-net-http@bd808.com
