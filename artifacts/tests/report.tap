@@ -1,0 +1,12 @@
+TAP version 13
+ok 1 - Moar\Net\Http\RequestTest::test_basic_get
+ok 2 - Moar\Net\Http\RequestTest::test_parallel
+ok 3 - Moar\Net\Http\RequestTest::test_postcontent
+ok 4 - Moar\Net\Http\RequestTest::test_malformed_url
+ok 5 - Moar\Net\Http\RequestTest::test_dns_failure
+ok 6 - Moar\Net\Http\RequestTest::test_connect_failure
+ok 7 - Moar\Net\Http\RequestTest::test_get_404
+ok 8 - Moar\Net\Http\RequestTest::test_operation_timeout
+ok 9 - Moar\Net\Http\RequestTest::test_too_many_redirects
+ok 10 - Moar\Net\Http\UtilTest::test_params_are_added_before_fragment
+1..10
