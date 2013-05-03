@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="10" assertions="26" failures="0" errors="0" time="5.844344">
-    <testsuite name="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" namespace="Moar\Net\Http" fullPackage="Moar" package="Moar" tests="9" assertions="23" failures="0" errors="0" time="5.838457">
-      <testcase name="test_basic_get" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="13" assertions="3" time="0.484398"/>
-      <testcase name="test_parallel" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="26" assertions="10" time="0.679063"/>
-      <testcase name="test_postcontent" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="45" assertions="2" time="0.177168"/>
-      <testcase name="test_malformed_url" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="59" assertions="1" time="0.006809"/>
-      <testcase name="test_dns_failure" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="67" assertions="1" time="0.394209"/>
-      <testcase name="test_connect_failure" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="75" assertions="1" time="0.056872"/>
-      <testcase name="test_get_404" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="84" assertions="2" time="0.445101"/>
-      <testcase name="test_operation_timeout" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="92" assertions="1" time="0.544995"/>
-      <testcase name="test_too_many_redirects" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="102" assertions="2" time="3.049842"/>
+  <testsuite name="" tests="10" assertions="26" failures="0" errors="0" time="3.785607">
+    <testsuite name="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" namespace="Moar\Net\Http" fullPackage="Moar" package="Moar" tests="9" assertions="23" failures="0" errors="0" time="3.779677">
+      <testcase name="test_basic_get" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="13" assertions="3" time="0.423086"/>
+      <testcase name="test_parallel" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="26" assertions="10" time="1.995972"/>
+      <testcase name="test_postcontent" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="45" assertions="2" time="0.181467"/>
+      <testcase name="test_malformed_url" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="59" assertions="1" time="0.005457"/>
+      <testcase name="test_dns_failure" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="67" assertions="1" time="0.328948"/>
+      <testcase name="test_connect_failure" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="75" assertions="1" time="0.004658"/>
+      <testcase name="test_get_404" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="84" assertions="2" time="0.278656"/>
+      <testcase name="test_operation_timeout" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="92" assertions="1" time="0.506651"/>
+      <testcase name="test_too_many_redirects" class="Moar\Net\Http\RequestTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/RequestTest.php" line="102" assertions="2" time="0.054782"/>
     </testsuite>
-    <testsuite name="Moar\Net\Http\UtilTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/UtilTest.php" namespace="Moar\Net\Http" fullPackage="Moar" package="Moar" tests="1" assertions="3" failures="0" errors="0" time="0.005887">
-      <testcase name="test_params_are_added_before_fragment" class="Moar\Net\Http\UtilTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/UtilTest.php" line="13" assertions="3" time="0.005887"/>
+    <testsuite name="Moar\Net\Http\UtilTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/UtilTest.php" namespace="Moar\Net\Http" fullPackage="Moar" package="Moar" tests="1" assertions="3" failures="0" errors="0" time="0.005930">
+      <testcase name="test_params_are_added_before_fragment" class="Moar\Net\Http\UtilTest" file="/home/travis/build/bd808/moar-net-http/test/suite/Moar/Net/Http/UtilTest.php" line="13" assertions="3" time="0.005930"/>
     </testsuite>
   </testsuite>
 </testsuites>
