@@ -11,14 +11,15 @@ $config = array(
     )
 );
 
-if ($token = getenv('ARCHER_TOKEN')) {
-    $config['config']['github-oauth'] = array(
-        'github.com' => $token
-    );
-    $composerFlags = '--prefer-dist';
-} else {
+//if ($token = getenv('ARCHER_TOKEN')) {
+//    $config['config']['github-oauth'] = array(
+//        'github.com' => $token
+//    );
+//    $composerFlags = '--prefer-dist';
+//} else {
+// dist is failing pretty consistently on travis
     $composerFlags = '--prefer-source';
-}
+//}
 
 $file = '~/.composer/config.json';
 $dir  = dirname($file);
