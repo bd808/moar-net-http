@@ -1,9 +1,8 @@
 .php-version
-build
+/build/
 composer.lock
 composer.phar
 phpunit.xml
-vendor
 
 # archer start
 /artifacts/
